@@ -39,7 +39,7 @@
           - #DB_PASSWORD=
         - Archivo con la información de la Base de Datos (si no existe hay que crearlo) `database/database.sqlite`
 
-6. **Generar las migraciones (OPCIONAL - Sólo si el proyecto necesita Base de Datos y/o tiene información predefinida)**
+6. **Generar las migraciones (OPCIONAL - Sólo si el proyecto necesita Base de Datos**
 
       - Ejecuta las migraciones
 
