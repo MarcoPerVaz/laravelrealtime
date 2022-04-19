@@ -5,7 +5,7 @@
 <!-- end title -->
 
 <!-- commit name -->
-### Commit | __Estructura de Laravel para crear aplicaciones en tiempo real__
+### Commit | __Configurando laravel para Pusher y laravel echo__
 <!-- end commit name -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -18,13 +18,11 @@
 
 <!-- commit instructions -->
 #### Instrucciones Commit
-- Instalación de `laravel ui`
-  > composer require laravel/ui "^1.1"
-- Instalación de `bootstrap` junto con `auth`
-  > php artisan ui bootstrap --auth
-- Instalación de archivos javascript
-  > npm install
-- Compilación de archivos javascript
+- Instalación de `Pusher`
+  > composer require pusher/pusher-php-server ^4.1
+- Instalación de `Laravel Echo`
+  > npm install --save-dev laravel-echo pusher-js
+-Compilar archivos de Javascript
   > npm run dev
 <!-- end commit instructions -->
 
