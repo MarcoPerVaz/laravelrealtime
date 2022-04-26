@@ -14,3 +14,13 @@
 Broadcast::channel('App.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
+
+/* 
+    'notifications'
+        Nombre del canal declarado en la función broadcastOn() en app\Events\UserSessionChanged.php
+    return $user != null;
+        Si no existe el usuario devuelve null y si devuelve a algún usuario entonces accede al canal de comunicación
+*/
+Broadcast::channel('notifications', function ($user) {
+    return $user != null;
+});
