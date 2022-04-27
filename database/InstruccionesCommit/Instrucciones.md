@@ -5,7 +5,7 @@
 <!-- end title -->
 
 <!-- commit name -->
-### Commit | __Creando tu primer sistema de notificaciones en tiempo real__
+### Commit | __Creando una API que funcione en tiempo real__
 <!-- end commit name -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -18,14 +18,14 @@
 
 <!-- commit instructions -->
 #### Instrucciones Commit
+- Creación del controlador
+  > php artisan make:controller Api\\UserController -r -m User
 - Creación del evento
-  > php artisan make:event UserSessionChanged
+  > php artisan make:event UserCreated
 - Creación del evento
-  > php artisan make:listener BroadcastUserLoginNotification
+  > php artisan make:event UserUpdated
 - Creación del evento
-  > php artisan make:listener BroadcastUserLogoutNotification
-- Compilar archivos de Javascript después de hacer todos los cambios
-  > npm run dev
+  > php artisan make:event UserDeleted
 <!-- end commit instructions -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -38,10 +38,8 @@
 
 <!-- information -->
 #### Información:
-- Más información en `app\Events\UserSessionChanged.php`
-- Más información en `app\Listeners\BroadcastUserLoginNotification.php`
-- Más información en `app\Listeners\BroadcastUserLogoutNotification.php`
-- Más información en `app\Providers\EventServiceProvider.php`
-- Más información en `resources\js\app.js`
-- Más información en `routes\channels.php`
+- Más información en `routes\api.php`
+- Más información en `app\Events\UserCreated.php`
+- Más información en `app\Events\UserUpdated.php`
+- Más información en `app\Events\UserDeleted.php`
 <!-- end information -->

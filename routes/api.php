@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/* 
+    Ruta api de tipo Resource (contiene los métodos CRUD, index, create, store, edit, update y destroy)
+*/
+Route::apiResource('users', 'Api\UserController');
