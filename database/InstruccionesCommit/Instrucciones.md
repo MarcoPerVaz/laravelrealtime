@@ -5,7 +5,7 @@
 <!-- end title -->
 
 <!-- commit name -->
-### Commit | __Creando una API que funcione en tiempo real__
+### Commit | __Creando un juego en tiempo real__
 <!-- end commit name -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -18,14 +18,12 @@
 
 <!-- commit instructions -->
 #### Instrucciones Commit
-- Creación del controlador
-  > php artisan make:controller Api\\UserController -r -m User
 - Creación del evento
-  > php artisan make:event UserCreated
+  > php artisan make:event RemainingTimeChanged
 - Creación del evento
-  > php artisan make:event UserUpdated
-- Creación del evento
-  > php artisan make:event UserDeleted
+  > php artisan make:event WinnerNumberGenerated
+-Creación del comando
+  > php artisan make:command GameExecutor
 <!-- end commit instructions -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -38,8 +36,7 @@
 
 <!-- information -->
 #### Información:
-- Más información en `routes\api.php`
-- Más información en `app\Events\UserCreated.php`
-- Más información en `app\Events\UserUpdated.php`
-- Más información en `app\Events\UserDeleted.php`
+- Más información en `app\Events\RemainingTimeChanged.php`
+- Más información en `app\Events\WinnerNumberGenerated.php`
+- Más información en `app\Console\Commands\GameExecutor.php`
 <!-- end information -->

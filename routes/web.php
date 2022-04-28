@@ -24,3 +24,9 @@ Route::get('/home', 'HomeController@index')->name('home');
     Solo devuelve una vista sin necesidad de un controlador
 */
 Route::view('/users', 'users.showAll')->name('users.all');
+
+/* 
+    Solo devuelve una vista sin necesidad de un controlador
+*/
+Route::view('/game', 'game.show')->name('game.show');
+
