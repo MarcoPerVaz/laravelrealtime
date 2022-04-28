@@ -5,7 +5,7 @@
 <!-- end title -->
 
 <!-- commit name -->
-### Commit | __Creando un juego en tiempo real__
+### Commit | __Creando una sala de chat usando mensajes en tiempo real con Laravel Echo__
 <!-- end commit name -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -18,12 +18,8 @@
 
 <!-- commit instructions -->
 #### Instrucciones Commit
-- Creación del evento
-  > php artisan make:event RemainingTimeChanged
-- Creación del evento
-  > php artisan make:event WinnerNumberGenerated
--Creación del comando
-  > php artisan make:command GameExecutor
+- Creación del controlador
+  > php artisan make:controller ChatController
 <!-- end commit instructions -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -36,7 +32,5 @@
 
 <!-- information -->
 #### Información:
-- Más información en `app\Events\RemainingTimeChanged.php`
-- Más información en `app\Events\WinnerNumberGenerated.php`
-- Más información en `app\Console\Commands\GameExecutor.php`
+- Más información en `resources\views\chat\show.blade.php`
 <!-- end information -->
