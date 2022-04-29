@@ -33,3 +33,13 @@ Broadcast::channel('chat', function ($user) {
         return ['id' => $user->id, 'name' => $user->name];
     }
 });
+
+/* 
+    'chat.greet.{receiver}'
+        Nombre del canal declarado en la función broadcastOn() en app\Events\GreetingSent.php
+    return $user != null;
+        Si no existe el usuario devuelve null y si devuelve a algún usuario entonces accede al canal de comunicación
+*/
+Broadcast::channel('chat.greet.{receiver}', function ($user, $receiver) {
+    return (int) $user->id === (int) $receiver;
+});

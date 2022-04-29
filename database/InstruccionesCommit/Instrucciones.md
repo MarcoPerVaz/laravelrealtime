@@ -5,7 +5,7 @@
 <!-- end title -->
 
 <!-- commit name -->
-### Commit | __Creando una sala de chat usando mensajes en tiempo real con Laravel Echo__
+### Commit | __Permitiendo enviar eventos privados en tiempo real__
 <!-- end commit name -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -18,8 +18,8 @@
 
 <!-- commit instructions -->
 #### Instrucciones Commit
-- Creación del controlador
-  > php artisan make:controller ChatController
+- Creación del evento
+  > php artisan make:event GreetingSent
 <!-- end commit instructions -->
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
